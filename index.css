@@ -1,0 +1,177 @@
+/* Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%) */
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    max-width: 350px;
+    min-height: 100%;
+    background:  hsl(257, 40%, 49%) url(images/bg-mobile.svg) no-repeat right top;
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: 0rem 2rem;
+}
+
+.logo img{
+    width: 160px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+}
+.content .content-img{
+    width: 100%;
+}
+.content .content-img img{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.content .content-text{
+    text-align: center;
+    color: white;
+}
+
+.content .content-text h2{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.content .content-text p{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    word-spacing: 0.1rem;
+    line-height: 1.5rem;
+    opacity: 0.9;
+}
+
+button{
+    padding: 0.8rem 5rem;
+    border: none;
+    border-radius: 56px;
+}
+
+.btn{
+    color: hsl(257, 40%, 49%, 0.8);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 10px 10px -10px black;
+    margin-bottom: 5rem;
+}
+
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-icons{
+    text-align: center;
+    font-size: 18px;
+}
+
+.fa-brands{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+.social-icons .fa-twitter{
+    margin: 0 0.6rem;
+}
+.social-icons .fa-facebook-f{
+    padding: 0.5rem 0.7rem;
+}
+.social-icons .fa-instagram{
+    padding: 0.5rem 0.6rem;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 1028px){
+    body{
+        width: 100vw;
+        height: 100vh;  
+    }
+    
+    .container{
+        max-width: 100%;
+        background:  hsl(257, 40%, 49%) url(images/bg-desktop.svg) no-repeat;
+        background-position: right top;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    
+    .content {
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .content .content-img{
+        width: 60%;
+    }
+    .content .content-img img{
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0rem;
+    }
+    
+    .content .content-text{
+        width: 40%;
+        text-align: left;
+        margin: 4.5rem 0 0rem 1.5rem;
+    }
+    
+    .content .content-text h2{
+        font-size: 34px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .content .content-text p{
+        font-size: 16px;
+        line-height: 1.5rem;
+        opacity: 0.7;
+        margin-bottom: 3rem;
+    }
+    
+    button{
+        padding: 0.8rem 3rem;
+    }
+    
+    .btn{
+        margin-bottom: 0rem;
+    }
+    
+    .social-icons{
+        text-align: right;
+    }
+    .fa-brands{
+        margin-top: 2rem;
+    }
+}
